@@ -1,0 +1,20 @@
+<form name="form" class="container CreateCompany" ng-submit='form.$valid && addCompany()'>
+    <h2 class="text-center">Create Company</h2>
+    <div class="form-group">
+        <label for="companyName">Company Name</label>
+        <input class="form-control" name="CompanyName" id="companyName" type="text" ng-model="company.name"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label for="address">Address</label>
+        <input class="form-control" name="CompanyAddress" id="address" type="text" ng-model="company.address"
+            required>
+    </div>
+    <div class="form-group">
+        <label for="createdBy">Created By</label>
+        <input class="form-control" name="CompanyCreatedBy" id="createdBy" type="tel" ng-model="company.createdBy" readonly>
+    </div>
+
+    <button type="submit" class="btn btn-lg btn-primary btn-block">Add</button>
+</form>

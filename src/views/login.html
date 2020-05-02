@@ -1,0 +1,27 @@
+<div class="container">
+    <!-- <%if(error&&error.length>0) {%>
+        <div class="alert alert-danger">
+            <%=error%>
+        </div>
+    <%}%>
+    <%if(success&&success.length>0){%>
+        <div class="alert alert-success">
+            <%=success%>
+        </div>
+    <%}%> -->
+    <form name="form" class="container login" ng-submit='form.$valid && signIn()'>
+        <h2 class="text-center">Login</h2>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input class="form-control" name="email" id="email" type="email" ng-model="signInInfo.email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input class="form-control" name="password" id="password" type="password" ng-model="signInInfo.password" required>
+        </div>
+
+
+        <button type='submit' class="btn btn-lg btn-primary btn-block">Sign In</button>
+        <!-- <a class="btn btn-secondary btn-lg btn-block" href="/Register">Register</a> -->
+    </form>
+</div>

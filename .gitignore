@@ -1,0 +1,15 @@
+.editorconfig
+.idea/
+.tmp/
+src/bower_components/
+src/bower_component_bk**
+node_modules/
+dist/
+.DS_Store
+app/version.json
+package-lock.json
+.npm-global
+public/
+.firebase/
+.firebaserc
+firebase.json
